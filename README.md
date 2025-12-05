@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WebReckonbynat
 
-## Getting Started
+> Toolkit kecil untuk melakukan reconnaissance ringan pada sebuah website.  
+> Dibuat dengan Next.js untuk keperluan edukasi dan testing pribadi.
 
-First, run the development server:
+## 🔍 Deskripsi
+WebReckon adalah web scanner sederhana berbasis **Next.js** yang dapat melakukan pengecekan cepat terhadap sebuah domain.  
+Tujuan utamanya adalah mendeteksi informasi dasar yang biasanya digunakan saat melakukan recon awal pada penetration testing, seperti:
 
+- Resolusi IP
+- Header respons
+- Teknologi yang terdeteksi (Cloudflare, Vercel, Next.js, dll)
+- Subdomain sederhana dari wordlist bawaan
+
+
+## 🖼 Preview
+![Preview 1](/preview1.png)
+![Preview 2](/preview2.png)
+
+## ⚙ Fitur Utama
+- Resolusi **IP Address** target
+- Fetch **HTTP Headers**
+- Deteksi teknologi berdasarkan header
+- Scan **subdomain** menggunakan wordlist internal
+- API route menggunakan Next.js Edge/Server Functions
+- Tampilan UI modern dan mudah dipakai
+
+## 📦 Cara Install
 ```bash
+git clone https://github.com/NatNatt-Dev/WebReckonbynat.git
+cd webreckon
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
